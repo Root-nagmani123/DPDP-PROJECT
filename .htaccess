@@ -1,0 +1,61 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+Options -Indexes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]
+
+
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK|OPTIONS) 
+RewriteRule .* - [F]
+
+# Redirect /xampp folder to https
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} xampp
+RewriteRule ^(.*) https://%{SERVER_NAME}$1 [R,L]
+
+# Redirect /phpMyAdmin folder to https
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} phpmyadmin 
+RewriteRule ^(.*) https://%{SERVER_NAME}$1 [R,L]
+
+# Redirect /security folder to https
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} security
+RewriteRule ^(.*) https://%{SERVER_NAME}$1 [R,L]
+
+# Redirect /webalizer folder to https 
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} webalizer
+RewriteRule ^(.*) https://%{SERVER_NAME}$1 [R,L]
+
+RewriteCond %{REQUEST_METHOD} !^(GET|POST|HEAD)
+RewriteRule .* - [R=405,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options DENY
+    Header set Access-Control-Allow-Origin "*"
+    Header always set Referrer-Policy: strict-origin
+    Header always set Feature-Policy "microphone 'none'; payment 'none'; sync-xhr 'self'"
+    Header set X-XSS-Protection: "1; mode=block"
+
+# START - Disable server signature #
+    Header unset Server
+    Header always unset X-Powered-By
+    Header unset X-Powered-By
+    Header unset X-CF-Powered-By
+    Header unset X-Mod-Pagespeed
+    Header unset X-Pingback
+    Header unset X-Forwarded-Host
+    #disables Apache's ETag Header
+    Header unset ETag
+# END - Disable server signature #
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css|swf|xml|html|gz)$">
+        #RewriteRule ^(.*)$ $1 [NS,E=no-gzip:1,E=dont-vary:1]
+    </FilesMatch>
+</IfModule>
