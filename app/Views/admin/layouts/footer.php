@@ -16,26 +16,26 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-<script src="<?php echo base_url('backend/assets/vendor/apexcharts/apexcharts.min.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/chart.js/chart.min.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/echarts/echarts.min.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/quill/quill.min.js'); ?>"></script>  
-<script src="<?php echo base_url('backend/assets/vendor/tinymce/tinymce.min.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/php-email-form/validate.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp//apexcharts/apexcharts.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/chart.js/chart.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/echarts/echarts.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/quill/quill.min.js'); ?>"></script>  
+<script src="<?php echo base_url('backend/assets/dp_fp/tinymce/tinymce.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/php-email-form/validate.js'); ?>"></script>
 <script src="<?php echo base_url('backend/assets/js/main.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/select2.min.js'); ?>" defer></script>
-<script src="<?php echo base_url('backend/assets/vendor/jquery.min.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/jquery-3.7.0.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/jquery.dataTables.min.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/dataTables.buttons.min.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/jszip.min.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/pdfmake.min.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/vfs_fonts.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/buttons.html5.min.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/buttons.print.min.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/dataTables.editor.js'); ?>"></script>
-<script src="<?php echo base_url('backend/assets/vendor/dataTables.editor.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/select2.min.js'); ?>" defer></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/jquery.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/jquery-3.7.0.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/jquery.dataTables.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/dataTables.buttons.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/jszip.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/pdfmake.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/vfs_fonts.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/buttons.html5.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/buttons.print.min.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/dataTables.editor.js'); ?>"></script>
+<script src="<?php echo base_url('backend/assets/dp_fp/dataTables.editor.min.js'); ?>"></script>
 
 <?php
 if (!empty($custompage_script)) {

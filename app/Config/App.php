@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/dpdp_codeigniter/';
+    public $baseURL = 'http://localhost/DPDP-PROJECT/';
      //$domain= 'tmafederationofinida.in';
      //public $baseURL = "https://www.tmafederationofindia.in";
      

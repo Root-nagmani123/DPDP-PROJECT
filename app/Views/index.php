@@ -12,13 +12,13 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
-  <link href="<?php echo base_url('backend/assets/vendor/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
-  <link href="<?php echo base_url('backend/assets/vendor/bootstrap-icons/bootstrap-icons.css'); ?>" rel="stylesheet">
-  <link href="<?php echo base_url('backend/assets/vendor/boxicons/css/boxicons.min.css'); ?>" rel="stylesheet">
-  <link href="<?php echo base_url('backend/assets/vendor/quill/quill.snow.css'); ?>" rel="stylesheet">
-  <link href="<?php echo base_url('backend/assets/vendor/quill/quill.bubble.css'); ?>" rel="stylesheet">
-  <link href="<?php echo base_url('backend/assets/vendor/remixicon/remixicon.css'); ?>" rel="stylesheet">
-  <link href="<?php echo base_url('backend/assets/vendor/simple-datatables/style.css'); ?>" rel="stylesheet">
+  <link href="<?php echo base_url('backend/assets/dp_fp/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
+  <link href="<?php echo base_url('backend/assets/dp_fp/bootstrap-icons/bootstrap-icons.css'); ?>" rel="stylesheet">
+  <link href="<?php echo base_url('backend/assets/dp_fp/boxicons/css/boxicons.min.css'); ?>" rel="stylesheet">
+  <link href="<?php echo base_url('backend/assets/dp_fp/quill/quill.snow.css'); ?>" rel="stylesheet">
+  <link href="<?php echo base_url('backend/assets/dp_fp/quill/quill.bubble.css'); ?>" rel="stylesheet">
+  <link href="<?php echo base_url('backend/assets/dp_fp/remixicon/remixicon.css'); ?>" rel="stylesheet">
+  <link href="<?php echo base_url('backend/assets/dp_fp/simple-datatables/style.css'); ?>" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="<?php echo base_url('backend/assets/css/style.css'); ?>" rel="stylesheet">
@@ -126,14 +126,14 @@
   </main><!-- End #main -->
 
   <!-- Vendor JS Files -->
-  <script src="<?php echo base_url('backend/assets/vendor/apexcharts/apexcharts.min.js'); ?>"></script>
-  <script src="<?php echo base_url('backend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
-  <script src="<?php echo base_url('backend/assets/vendor/chart.js/chart.min.js'); ?>"></script>
-  <script src="<?php echo base_url('backend/assets/vendor/echarts/echarts.min.js'); ?>"></script>
-  <script src="<?php echo base_url('backend/assets/vendor/quill/quill.min.js'); ?>"></script>
-  <script src="<?php echo base_url('backend/assets/vendor/simple-datatables/simple-datatables.js'); ?>"></script>
-  <script src="<?php echo base_url('backend/assets/vendor/tinymce/tinymce.min.js'); ?>"></script>
-  <script src="<?php echo base_url('backend/assets/vendor/php-email-form/validate.js'); ?>"></script> <script src="<?php echo base_url('backend/assets/js/jquery-3.6.1.js'); ?>"></script> 
+  <script src="<?php echo base_url('backend/assets/dp_fp/apexcharts/apexcharts.min.js'); ?>"></script>
+  <script src="<?php echo base_url('backend/assets/dp_fp/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+  <script src="<?php echo base_url('backend/assets/dp_fp/chart.js/chart.min.js'); ?>"></script>
+  <script src="<?php echo base_url('backend/assets/dp_fp/echarts/echarts.min.js'); ?>"></script>
+  <script src="<?php echo base_url('backend/assets/dp_fp/quill/quill.min.js'); ?>"></script>
+  <script src="<?php echo base_url('backend/assets/dp_fp/simple-datatables/simple-datatables.js'); ?>"></script>
+  <script src="<?php echo base_url('backend/assets/dp_fp/tinymce/tinymce.min.js'); ?>"></script>
+  <script src="<?php echo base_url('backend/assets/dp_fp/php-email-form/validate.js'); ?>"></script> <script src="<?php echo base_url('backend/assets/js/jquery-3.6.1.js'); ?>"></script> 
   <script src="<?php echo base_url('backend/assets/js/main.js'); ?>"></script>
 </body>
 
