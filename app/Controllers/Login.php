@@ -7,7 +7,7 @@ class Login extends BaseController
     protected $session;
     public function __construct(){
         $session = \Config\Services::session();
-        helper('Form_helper');
+        //helper('Form_helper');
         helper('url');  
     }
     public function index()
