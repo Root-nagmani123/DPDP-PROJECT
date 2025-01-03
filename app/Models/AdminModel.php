@@ -27,6 +27,20 @@ class AdminModel extends Model
             return false;
         }
     }
+
+    public function insertdata($table,$data)
+    {
+        $db = \Config\Database::connect();
+        $builder = $db->table($table);
+        $builder->insert($data);
+
+        // $query = $db->getLastQuery();
+        // $sql = $query->getQuery();
+        // echo $sql;
+        // die;
+
+        return $db->insertID();
+    }
   
     public function login($data){ 
        $encrypter = \Config\Services::encrypter();

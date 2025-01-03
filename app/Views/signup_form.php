@@ -30,15 +30,20 @@
                 <h4>Sign Up!</h4>
               </div>
               <div class="card-body">
-                <?= form_open('http://localhost:8080/insert',array('method' => 'POST', 'id' => 'admin', 'name' => 'admin', 'class'=>'needs-validation'));?>
+                <?php if(@$_GET['s']==1) { ?>
+                <div class="alert alert-success">
+                      <div class="alert-title">Signup Successfully ! <a href="<?php echo base_url('/'); ?>">Click here </a> to login</div>
+                      
+                    </div> <?php } ?>
+                <?=  form_open(base_url('signup_form'),array('method' => 'POST', 'id' => 'admin', 'name' => 'admin', 'class'=>'needs-validation'));?>
                   <div class="row">
                     <div class="form-group col-6">
                       <label for="frist_name">First Name<code>*</code></label>
-                      <input id="frist_name" type="text" class="form-control" name="frist_name" autofocus required>
+                      <input id="frist_name" type="text" class="form-control" name="name" autofocus required>
                     </div>
                     <div class="form-group col-6">
                       <label for="last_name">Last Name</label>
-                      <input id="last_name" type="text" class="form-control" name="last_name" >
+                      <input id="last_name" type="text" class="form-control" name="" >
                     </div>
                   </div>
                   <div class="row">
@@ -53,7 +58,7 @@
                     </div>
                     <div class="form-group col-6">
                       <label for="last_name">Date Of Birth<code>*</code></label>
-                      <input id="last_name" type="date" class="form-control" name="last_name" >
+                      <input id="last_name" type="date" class="form-control" name="" >
                     </div>
                   </div>
                    <div class="row">
@@ -65,7 +70,7 @@
                   </div>
                   <div class="form-group col-6">
                     <label for="email">Phone No.</label>
-                    <input id="email" type="email" class="form-control" name="email">
+                    <input id="email" type="text" class="form-control" name="mobile">
                     <div class="invalid-feedback">
                     </div>
                   </div>
@@ -73,20 +78,21 @@
                  <div class="row">
                   <div class="form-group col-6">
                     <label for="email">Department <code>*</code></label>
-                    <input id="email" type="email" class="form-control" name="email" required>
+                    <input id="email" type="text" class="form-control" name="" required>
                     <div class="invalid-feedback">
                     </div>
                   </div>
                   <div class="form-group col-6">
                     <label for="email">Designation</label>
-                    <input id="email" type="email" class="form-control" name="email">
+                    <input id="email" type="text" class="form-control" name="">
+                    <input id="email" type="hidden" class="form-control" name="created_date" value="<?php echo date("Y-m-d"); ?>">
                     <div class="invalid-feedback">
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
                     <label for="email">Address</label>
-                    <textarea class="form-control" name="email"></textarea>
+                    <textarea class="form-control" name=""></textarea>
                     <div class="invalid-feedback">
                     </div>
                   </div>
@@ -102,11 +108,11 @@
                     </div>
                     <div class="form-group col-6">
                       <label for="password2" class="d-block">Password Confirmation<code>*</code></label>
-                      <input id="password2" type="password" class="form-control" name="password-confirm" required>
+                      <input id="password2" type="password" class="form-control" name="" required>
                     </div>
                   </div>
                   <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" >
                       Sign Up!
                     </button>
                   </div>

@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://20.219.12.136:81/DPDP-PROJECT/';
+    public $baseURL = 'http://20.219.12.136:81';
      //$domain= 'tmafederationofinida.in';
      //public $baseURL = "https://www.tmafederationofindia.in";
      

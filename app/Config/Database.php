@@ -31,11 +31,11 @@ class Database extends Config
      * @var array
      */
     public $default = [
-        'DSN'      => '',
-        'hostname' => '127.0.0.1',
-        'username' => 'root',
-        'password' => '',
-        'database' => 'dpdp',
+         'DSN'      => '',
+        'hostname' => 'db-centcom-staging-cin.mysql.database.azure.com',
+        'username' => 'dbdb1',
+        'password' => 'Welcome@2025',
+        'database' => 'dpdp_project',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
