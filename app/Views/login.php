@@ -29,7 +29,7 @@
               <div class="card-header">
                 <h4>Login</h4>
               </div>
-              <div class="card-body">
+              <div class="card-body">test
                <?= form_open(base_url('login'),array('method' => 'POST', 'id' => 'admin', 'name' => 'admin', 'class'=>'needs-validation'));?>
                   <div class="form-group">
                     <label for="email">Email</label>
