@@ -29,10 +29,10 @@
               <div class="card-header">
                 <h4>Login</h4>
               </div>
-              <div class="card-body">test
+              <div class="card-body">
                <?= form_open(base_url('login'),array('method' => 'POST', 'id' => 'admin', 'name' => 'admin', 'class'=>'needs-validation'));?>
                   <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email">Email new code</label>
                     <input id="email" type="email" class="form-control" name="username" tabindex="1" required autofocus>
                     <div class="invalid-feedback">
                       Please fill in your email 
