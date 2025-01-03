@@ -52,10 +52,10 @@ $multipleRoutes = [
 
 $routes->map($multipleRoutes);
 
-$routes->get('signup', 'Login::signup');
-$routes->get('dashboard', 'Login::dashboard');
-$routes->get('sim', 'Login::sim');
-$routes->get('sim_form', 'Login::sim_form');
+$routes->get('/signup', 'Login::signup');
+$routes->get('/dashboard', 'Login::dashboard');
+$routes->get('/sim', 'Login::sim');
+$routes->get('/sim_form', 'Login::sim_form');
 //.................... Admin Panel routes..........................
 
 /*
