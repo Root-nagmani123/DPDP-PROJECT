@@ -42,7 +42,7 @@ class Login extends BaseController
     }
     public function signup()
     {
-        return view('signup');
+        echo "kk" ;die;
     }
      public function dashboard()
     {
