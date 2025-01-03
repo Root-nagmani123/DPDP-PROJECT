@@ -30,7 +30,7 @@
                 <h4>Login</h4>
               </div>
               <div class="card-body">
-               <?= form_open('http://localhost:8080/login',array('method' => 'POST', 'id' => 'admin', 'name' => 'admin', 'class'=>'needs-validation'));?>
+               <?= form_open(base_url('login'),array('method' => 'POST', 'id' => 'admin', 'name' => 'admin', 'class'=>'needs-validation'));?>
                   <div class="form-group">
                     <label for="email">Email</label>
                     <input id="email" type="email" class="form-control" name="username" tabindex="1" required autofocus>
