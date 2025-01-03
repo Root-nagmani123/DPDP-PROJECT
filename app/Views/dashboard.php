@@ -18,7 +18,7 @@
                     <h4>SIM</h4>
                   </div>
                   <div class="card-body">
-                    <a href="service.html">Apply for new SIM</a>
+                    <a href="<?php echo base_url("sim"); ?>">Apply for new SIM</a>
                   </div>
                 </div>
               </div><!-- 

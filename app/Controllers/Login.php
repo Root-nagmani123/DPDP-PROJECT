@@ -44,6 +44,19 @@ class Login extends BaseController
     {
         return view('signup');
     }
+     public function dashboard()
+    {
+        return view('dashboard');
+    }
+     public function sim()
+    {
+        return view('sim');
+    }
+     public function sim_form()
+    {
+        return view('sim_form');
+    }
+    
     public function logout() {
         $data = array(
             'userid' => '',           
