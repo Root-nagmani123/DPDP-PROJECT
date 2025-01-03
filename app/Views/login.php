@@ -30,7 +30,7 @@
                 <h4>Login</h4>
               </div>
               <div class="card-body">
-               <form action="http://20.219.12.136:81/login" method="POST" id="admin" name="admin" class="needs-validation" accept-charset="utf-8">
+               <form action="http://20.219.12.136:81/index.php/login" method="POST" id="admin" name="admin" class="needs-validation" accept-charset="utf-8">
                   <div class="form-group">
                     <label for="email">Email</label>
                     <input id="email" type="email" class="form-control" name="username" tabindex="1" required autofocus>
@@ -52,7 +52,7 @@
                       please fill in your password
                     </div>
                     <div class="float-right">
-                        <a href="<?php echo base_url("signup"); ?>" class="text-small">
+                        <a href="<?php echo base_url("index.php/signup"); ?>" class="text-small">
                           Sign Up! <br><br>
                         </a>
                       </div>

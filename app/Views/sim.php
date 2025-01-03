@@ -67,7 +67,7 @@
 <div class="form-group row mb-4">
                       <label class="col-form-label text-md-right col-12 col-md-6 col-lg-6"></label>
                       <div class="col-sm-12 col-md-6">
-                        <a class="btn btn-primary" href="<?php echo base_url("sim_form"); ?>">I agree!</a>
+                        <a class="btn btn-primary" href="<?php echo base_url("index.php/sim_form"); ?>">I agree!</a>
                       </div>
                     </div>
                     </div>

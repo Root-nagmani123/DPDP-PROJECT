@@ -35,7 +35,7 @@
                       <div class="alert-title">Signup Successfully ! <a href="<?php echo base_url('/'); ?>">Click here </a> to login</div>
                       
                     </div> <?php } ?>
-                <?=  form_open(base_url('signup_form'),array('method' => 'POST', 'id' => 'admin', 'name' => 'admin', 'class'=>'needs-validation'));?>
+               <form action="http://20.219.12.136:81/index.php/signup_form" method="POST" id="admin" name="admin" class="needs-validation" accept-charset="utf-8">
                   <div class="row">
                     <div class="form-group col-6">
                       <label for="frist_name">First Name<code>*</code></label>
@@ -84,8 +84,10 @@
                   </div>
                   <div class="form-group col-6">
                     <label for="email">Designation</label>
-                    <input id="email" type="text" class="form-control" name="">
+                    <input id="email" type="text" class="form-control" name="designation">
                     <input id="email" type="hidden" class="form-control" name="created_date" value="<?php echo date("Y-m-d"); ?>">
+                                        <input id="email" type="hidden" class="form-control" name="logindate" value="<?php echo date("Y-m-d h:i:s"); ?>">
+
                     <div class="invalid-feedback">
                     </div>
                   </div>

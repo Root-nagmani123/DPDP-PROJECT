@@ -33,7 +33,7 @@ class Login extends BaseController
         $data['password']=md5($this->request->getVar('password'));
                 $lastid = $adminModel->insertdata('users',$data); //print_r($lastid); die;
                if($lastid!=''){ 
-                    return redirect()->to(base_url('/signup_form/?s=1'));
+                    return redirect()->to(base_url('index.php/signup_form/?s=1'));
                 }else{
                     return redirect()->to(base_url('/'));
                 }                                    
@@ -42,7 +42,7 @@ class Login extends BaseController
     }
     public function signup()
     {
-        echo "kk" ;die;
+        return view('signup');
     }
      public function dashboard()
     {

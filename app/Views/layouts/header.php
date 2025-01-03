@@ -183,13 +183,13 @@
           <ul class="sidebar-menu">
             <!-- <li class="menu-header">Main</li> -->
             <li class="dropdown">
-              <a href="<?php echo base_url("dashboard"); ?>" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+              <a href="<?php echo base_url("index.php/dashboard"); ?>" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
             </li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown toggled"><i
                   data-feather="briefcase"></i><span>Available Services</span></a>
               <ul class="dropdown-menu" style="display: block;">
-                <li><a class="nav-link" href="<?php echo base_url("sim"); ?>">Apply for new SIM</a></li>
+                <li><a class="nav-link" href="<?php echo base_url("index.php/sim"); ?>">Apply for new SIM</a></li>
               </ul>
             </li>
            

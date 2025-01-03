@@ -85,7 +85,7 @@
                   <div class="form-group col-4">&nbsp;
                   </div>
                   <div class="form-group col-4">
-                    <a href="signup_form" class="btn btn-primary btn-lg btn-block text-center">
+                    <a href="index.php/signup_form" class="btn btn-primary btn-lg btn-block text-center">
                       I agree
                     </a>
                   </div>
