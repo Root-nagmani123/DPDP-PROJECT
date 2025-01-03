@@ -35,12 +35,12 @@ class AdminModel extends Model
         $password = md5($data['password']); 
 
         $query = $db->query("SELECT * FROM users where email like '".$data['username']."' AND password= '".$password."'");
-        $result = $query->getResult();
-        $dbd = $result[0]->id;
-        $date = date('d-m-y h:i:s');
+        $result = $query->getResult(); //print_r($result); die;
+       
                
-        if ($result[0] != "") {
-            
+        if (!empty($result)) {
+             $dbd = $result[0]->id;
+            $date = date('y-m-d h:i:s');
             $result1 = $db->query("UPDATE users set logindate ='".$date."' where id=".$dbd);
             $newdata = [
             'logindate'  => $date,
