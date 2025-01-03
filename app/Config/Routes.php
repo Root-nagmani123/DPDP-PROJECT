@@ -40,23 +40,19 @@ $routes->set404Override(function()
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Login::index');
-$routes->post('/login', 'Login::index');
-$routes->post('/logout', 'Login::logout');
 $multipleRoutes = [
     	
 //.................... Admin Panel routes..........................
 	'login' => 'Login::index',
 	'dashboard' => 'Login::dashboard',
 	'logout' => 'Login::logout',
-	'signup' => 'Login::signup',
 	'signup_form' => 'Login::signup_form',
 
 ];
 
 $routes->map($multipleRoutes);
 
-
-//$routes->get('users', 'UserController::getAll');
+$routes->get('signup', 'Login::signup');
 //.................... Admin Panel routes..........................
 
 /*
