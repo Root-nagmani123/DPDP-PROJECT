@@ -15,11 +15,9 @@ class Login extends BaseController
         $adminModel = new AdminModel();      
         if($this->request->getMethod() == "post") {  //print_r($this->request->getVar()); //die("RAM");
                 $data['MsgError'] = $adminModel->login($this->request->getVar());
-               if(!$_SESSION['userid']){ 
-                    return redirect()->to(base_url('/'));
-                }else{
+               
                     return view('dashboard');
-                }                                    
+                                                    
         }
         return view('login');
         
